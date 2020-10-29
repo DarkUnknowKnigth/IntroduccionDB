@@ -35,15 +35,15 @@ desc venta;
 # total de ventas por empleado (id)
 select id_empleado, count(id_venta) "Total_Ventas" from venta group by id_empleado order by Total_Ventas desc;
 # total de articulos por venta
-select id_articulo, count(*) "Total Articulos" from venta group by id_articulo;
+select id_articulo, count(*) "Total_Articulos" from venta group by id_articulo order by Total_Articulos desc;
 
-# Desafios Plus ++
+# Desafios Plus ++ en 10 min
 # los puestos mas ocupados 
 select nombre, count(*) as repeticiones from puesto group by nombre order by repeticiones desc;
 # los puestos peor pagados
-select nombre, count(*) as repeticiones from puesto group by nombre order by repeticiones asc;
+select nombre, avg(salario) as salario_promedio from puesto group by nombre order by salario_promedio asc;
 # 10 mejores vendedores
-select nombre, ventas from empleado inner join (select id_empleado as id, count(id_empleado) as ventas from venta group by id order by ventas desc limit 10) as X on id = id_empleado;
+select nombre, id as id_empleado, ventas from empleado inner join (select id_empleado as id, count(id_empleado) as ventas from venta group by id order by ventas desc limit 10) as X on id = id_empleado;
 # 20 articulos peor vendidos
 select nombre, ventas from articulo inner join (select id_articulo as id, count(id_articulo) as ventas from venta group by id order by ventas desc limit 10) as X on id = id_articulo;
 
