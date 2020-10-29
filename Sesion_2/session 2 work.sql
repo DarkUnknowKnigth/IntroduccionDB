@@ -16,14 +16,15 @@ select * from puesto where nombre like "%Developer%";
 #reto 2
 desc puesto;
 # salario promedio
-select avg(salario) from puesto;
+select round(avg(salario),2) as "Promedio_salario" from puesto;
 # contenga pasta
-select count(*) from articulo where nombre like '%Pasta%';
+select count(*) as "Numero_de¨_Pasta" from articulo where nombre like '%Pasta%';
 # salarios maximo y minimo
-select min(salario) as "Salario minimo", max(salario) as "Salario maximo" from puesto;
+select min(salario) as "Salario_minimo", max(salario) as "Salario_maximo" from puesto;
 # suma de los ultimos 3 salarios
-	# obsevacion en el ejemplo toma en cuenta 6
+	# obsevacion cual es mejor?
 select sum(salario) as "Suma ultimos 5 salarios" from (select salario from puesto order by id_puesto desc limit 5) as last5Salario;
+select sum(salario) as "Suma_last_5" from puesto where id_puesto > ((select max(id_puesto) from puesto ) - 5);
 
 #reto 3
 # repeticiones de puesto
@@ -35,3 +36,5 @@ desc venta;
 select id_empleado, count(clave) "Total Ventas" from venta group by id_empleado;
 # total de articulos por venta
 select id_articulo, count(*) "Total Articulos" from venta group by id_articulo;
+select min(precio) from articulo;
+select precio from articulo order by precio limit 1;
