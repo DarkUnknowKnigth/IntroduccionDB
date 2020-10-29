@@ -1,4 +1,4 @@
-# Retos 
+# Retos 1
 ## ¿Qué artículos incluyen la palabra Pasta en su nombre?
 ![imagen](images/consulta1.png)
 ## ¿Qué artículos incluyen la palabra Cannelloni en su nombre?
@@ -9,3 +9,7 @@
 ![imagen](images/consulta4.png)
 ## ¿Qué puestos incluyen la palabra Developer?
 ![imagen](images/consulta5.png)
+
+# Reto 2
+
+# Reto 3
