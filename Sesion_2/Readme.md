@@ -21,3 +21,7 @@
 ![imagen](images/consulta24.png)
 
 # Reto 3
+¿Cuántos registros hay por cada uno de los puestos?
+¿Cuánto dinero se paga en total por puesto?
+¿Cuál es el número total de ventas por vendedor?
+¿Cuál es el número total de ventas por artículo?

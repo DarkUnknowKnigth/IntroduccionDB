@@ -28,13 +28,22 @@ select sum(salario) as "Suma_last_5" from puesto where id_puesto > ((select max(
 
 #reto 3
 # repeticiones de puesto
-select nombre, count(*) as "Repeticiones" from puesto group by nombre;
+select nombre, count(*) as "Repeticiones" from puesto group by nombre order by Repeticiones desc;
 # suma de salarios por puesto
-select nombre, sum(salario) as "Total de pagos" from puesto group by nombre;
+select nombre, sum(salario) as "Total_de_pagos" from puesto group by nombre order by Total_de_pagos desc ;
 desc venta;
 # total de ventas por empleado (id)
-select id_empleado, count(clave) "Total Ventas" from venta group by id_empleado;
+select id_empleado, count(id_venta) "Total_Ventas" from venta group by id_empleado order by Total_Ventas desc;
 # total de articulos por venta
 select id_articulo, count(*) "Total Articulos" from venta group by id_articulo;
-select min(precio) from articulo;
-select precio from articulo order by precio limit 1;
+
+# Desafios Plus ++
+# los puestos mas ocupados 
+select nombre, count(*) as repeticiones from puesto group by nombre order by repeticiones desc;
+# los puestos peor pagados
+select nombre, count(*) as repeticiones from puesto group by nombre order by repeticiones asc;
+# 10 mejores vendedores
+select nombre, ventas from empleado inner join (select id_empleado as id, count(id_empleado) as ventas from venta group by id order by ventas desc limit 10) as X on id = id_empleado;
+# 20 articulos peor vendidos
+select nombre, ventas from articulo inner join (select id_articulo as id, count(id_articulo) as ventas from venta group by id order by ventas desc limit 10) as X on id = id_articulo;
+
