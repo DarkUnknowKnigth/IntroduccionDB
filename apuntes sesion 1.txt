@@ -1,0 +1,38 @@
+Dato: algo cualitativo o cuantitativo
+Estructuras de datos
+Sistema gestor de base de datos : permite la creacion, gestion y administracion de las bases de datos
+Existen 2 tipos de bases de datos SQL y NoSQL
+Relacionales:
+Maria DB, mysql, oracle
+MongoDB, Cassandra, Firebase
+
+Modelo cliente servidor 
+
+existe un servidor de base de datos alojada en un equipo 
+y a este nos conectamos atravez de un puerto (3306), un dominio o host (IP)
+en ocasiones un usuario y contraseña con el cual nos conectaremos a travez de un cliente
+
+SQL = Structured Query Language
+ 
+composicion de una tabla:
+
+	columna	   PK	
+fila-> | celda	| campo	|campo2	|campo3	|
+
+Tabla articulo
+int (4 bytes) entero
+double (8 bytes) Número en coma flotante de precisión doble
+varchar Almacena una cadena de longitud variable. La cadena podrá contener desde 0 a 255 caracteres.
+Date
+Bit / Bool
+
+Cosas que vimos
+SELECT
+DESC
+SHOW
+WHERE
+LIMIT 
+AND
+OR 
+IN
+
