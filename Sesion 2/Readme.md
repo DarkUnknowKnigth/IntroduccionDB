@@ -1,11 +1,11 @@
 # Retos 
 ## ¿Qué artículos incluyen la palabra Pasta en su nombre?
-    <img src="imagenes/consulta1.gif" align="right" height="200" width="300"> 
+![imagen](images/consulta1.png)
 ## ¿Qué artículos incluyen la palabra Cannelloni en su nombre?
-    <img src="imagenes/consulta2.gif" align="right" height="200" width="300"> 
+![imagen](images/consulta2.png)
 ## ¿Qué nombres están separados por un guión (-) por ejemplo Puree - Kiwi?
-    <img src="imagenes/consulta3.gif" align="right" height="200" width="300"> 
+![imagen](images/consulta3.png)
 ## ¿Qué puestos incluyen la palabra Designer?
-    <img src="imagenes/consulta4.gif" align="right" height="200" width="300"> 
+![imagen](images/consulta4.png)
 ## ¿Qué puestos incluyen la palabra Developer?
-    <img src="imagenes/consulta5.gif" align="right" height="200" width="300"> 
+![imagen](images/consulta5.png)
