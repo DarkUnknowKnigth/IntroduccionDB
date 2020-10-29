@@ -21,7 +21,7 @@ select round(avg(salario),2) as "Promedio_salario" from puesto;
 select count(*) as "Numero_de¨_Pasta" from articulo where nombre like '%Pasta%';
 # salarios maximo y minimo
 select min(salario) as "Salario_minimo", max(salario) as "Salario_maximo" from puesto;
-# suma de los ultimos 3 salarios
+# suma de los ultimos 5 salarios
 	# obsevacion cual es mejor?
 select sum(salario) as "Suma ultimos 5 salarios" from (select salario from puesto order by id_puesto desc limit 5) as last5Salario;
 select sum(salario) as "Suma_last_5" from puesto where id_puesto > ((select max(id_puesto) from puesto ) - 5);
