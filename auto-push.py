@@ -1,6 +1,6 @@
 import os
-message = input('Nombre del commit y descripcion:')
+message = input('What did you do dude? :')
 os.system('git add .')
 os.system(f'git commit -m "{message}"')
 os.system('git push origin master')
-os.system('Ready 😎')
+os.system('echo Ready Dude 😎')
