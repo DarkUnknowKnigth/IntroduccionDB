@@ -1,0 +1,12 @@
+Subconsultas consultas anidadas con las que obtenemos informacion
+
+Llave primaria: permite identificar de manera única cada uno de los registros de una tabla.
+Llaves foráneas: este tipo de llaves, representan justamente la relación que pudiera haber entre dos tablas
+Joins inner: interseccion
+Left: todo el conjunto izquierdo mas la condicion
+Rigth: todo el conjunto derecho mas la condicion
+
+Relaciones 
+uno a muchos 
+uno a uno
+muchos a muchos
