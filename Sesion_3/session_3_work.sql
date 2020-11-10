@@ -1,3 +1,4 @@
+use tienda;
 -- ¿Cuál es el nombre de los empleados cuyo sueldo es menor a $10,000?
 -- subconsultas reto 1
 select concat (nombre ,' ', apellido_paterno,' ', apellido_materno) as nombre
@@ -74,4 +75,4 @@ create view report_most_stonks_72 as (
     join puesto p using(id_puesto) 
     group by articulo
 );
-select * from report_most_stonks_72;
+select * from report_most_stonks_72 order by ventas desc;

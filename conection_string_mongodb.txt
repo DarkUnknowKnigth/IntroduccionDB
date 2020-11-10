@@ -1,0 +1,1 @@
+mongodb+srv://dany:D@ny0525;@cluster0.cgq6w.mongodb.net/test?connectTimeoutMS=600000&socketTimeoutMS=6000000&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false
