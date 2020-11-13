@@ -1,0 +1,36 @@
+{
+    filter: {
+     $or: [
+      {
+       house_rules: RegExp('party.*not allowed', i)
+      },
+      {
+       house_rules: RegExp('no.*parties', i)
+      }
+     ]
+    }
+}
+{
+    filter: {
+     $or: [
+      {
+       house_rules: RegExp('no.*pets', i)
+      },
+      {
+       house_rules: RegExp('pets.*not.*allowed', i)
+      }
+     ]
+    }
+}
+{
+    filter: {
+     $or: [
+      {
+       house_rules: RegExp('no.*smoke', i)
+      },
+      {
+       house_rules: RegExp('no.*smoking', i)
+      }
+     ]
+    }
+}

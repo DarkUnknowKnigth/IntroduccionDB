@@ -1,0 +1,26 @@
+reto 1
+{ $or: [{ house_rules:/party.*not allowed/i},{house_rules:/no.*parties/i}]}
+{$or:[{house_rules: /no.*pets/i},{house_rules: /pets.*not.*allowed/i}]}
+{$or:[{house_rules: /no.*smoke/i},{house_rules: /no.*smoking/i}]}
+{$and: [{ $or: [{ house_rules:/party.*not allowed/i},{house_rules:/no.*parties/i}]},{$or:[{house_rules: /no.*smoke/i},{house_rules: /no.*smoking/i}]}]}
+{ $or: [{ house_rules:/party.*not allowed/i},{house_rules:/no.*parties/i}],$or:[{house_rules: /no.*smoke/i},{house_rules: /no.*smoking/i}]}
+reto 2
+{number_of_reviews:{$gte:50}, "review_scores.review_scores_rating": {$gte:80},amenities:{$in:[/Ethernet/]},"address.country_code":"BR"}
+{amenities: {$in: ["Ethernet connection"]}, "review_scores.review_scores_rating": {$gte:80}, number_of_reviews: {$gte:50}, "address.country_code": "BR"}
+
+
+
+    {$and: [{ $or: [{ house_rules:/party.*not allowed/i},{house_rules:/no.*parties/i}]},{$or:[{house_rules: /no.*smoke/i},{house_rules: /no.*smoking/i}]}]}
+{
+    $and:[ 
+        {
+            house_rules: {
+                $in: [/party.*not allowed/i,/no.*parties/i]
+            } 
+        },{
+            house_rules: {
+                $in: [/no.*smoke/i,/no.*smoking/i]
+            }
+        }
+    ]
+}

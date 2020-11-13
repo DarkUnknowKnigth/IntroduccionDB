@@ -1,0 +1,16 @@
+buscar en cadena /<pattern>/
+buscar cadena sin ser case sensitice /<pattern>/i (i = case no sensitive)
+buscar cadena con algo al comienzo /^<pattern>/i
+buscar cadena con algo al final /<pattern>$/i
+buscar repreticiones de una cadena  /<pattern>.*<pattern>/i (* cualquier caracter 0, 1 o mas veces)
+                                    /<pattern>.+<pattern>/i (+ cualquier caracter 1 o mas veces)
+                                    /<pattern>.{n}<pattern>/i ({n} cualquier caracter n veces)
+                                    /<pattern>[set]<pattern>/i ( [set] cualquier caracter dentro del set)
+
+representacion de caracteres 
+espacio /s 
+punto \.
+El punto representa que ahi va un caracter /ca..on$/i
+
+Notacion punto 
+buscar en las propiedades de un objeto  {"address.country":"Drazil"}
