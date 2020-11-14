@@ -1,0 +1,17 @@
+[
+    {
+        $match: {
+            amenities: {
+                $in: [/wifi/i, /ethernet/i]
+            }
+        }
+    },
+    {
+        $group: {
+            _id: null,
+            internet: {
+                $sum: 1
+            }
+        }
+    }
+]
