@@ -1,0 +1,30 @@
+[
+    {
+        $match: {
+            "reviews": { 
+                $ne: null
+            },
+            "review_scores.review_scores_rating": {
+                $gte: 80
+            },
+            "amenities": { 
+                $in: [/ethernet/i]
+            },
+            "address.country_code": /br/i
+        }
+    },
+    {
+        $addFields: {
+            "comments": { 
+                $size: "$reviews"
+            }
+        }
+    },
+    {
+        $match: {
+            "comments": { 
+                $gte: 50
+            }
+        }
+    }
+]
