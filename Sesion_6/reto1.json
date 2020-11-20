@@ -1,0 +1,34 @@
+[
+    {$match: {
+    property_type:/House/,
+    bedrooms: { $gte: 1
+            }
+        }
+    },
+    {$addFields: {
+    cost_by_bedroom: { 
+      $divide: ['$price','$bedrooms'
+                ]
+            }
+        }
+    },
+    {$group: {
+    _id: '$address.country',
+    avg_bedroom_price: {
+      $avg: '$cost_by_bedroom'
+            },
+    sum_bedroom_price: {
+      $sum: '$cost_by_bedroom'
+            },
+    total_props: {
+      $sum: 1
+            }
+        }
+    },
+    {$addFields: {
+    average: {$divide: ['$sum_bedroom_price','$total_props'
+                ]
+            }
+        }
+    }
+]
