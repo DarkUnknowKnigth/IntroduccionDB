@@ -6,3 +6,4 @@
 ### [Sesion 3](https://github.com/DarkUnknowKnigth/IntroduccionDB/tree/master/Sesion_3)
 ### [Sesion 4](https://github.com/DarkUnknowKnigth/IntroduccionDB/tree/master/Sesion_4)
 ### [Sesion 5](https://github.com/DarkUnknowKnigth/IntroduccionDB/tree/master/Sesion_5)
+### [Sesion 6](https://github.com/DarkUnknowKnigth/IntroduccionDB/tree/master/Sesion_6)
