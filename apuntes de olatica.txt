@@ -1,0 +1,30 @@
+si soy representante y no quiero estar el partido manda un nuevo regitros
+- en remplazar
+   corregir el validador porque me encuentra a mi mismo en ocupate
+
+- adicionales son opcionales nullables
+- en la parte de dar debaja a representantes poner simepre
+- el cancelar de editar regresar a representantes
+corregir tabla de execl
+- al dar click mostrar el nombramiento
+- lo suben y tienen 24 hrs 
+- quitar opcion de subir
+- en deap poner el nombramiento no proporcionado en boton
+- ya subido porder descargarlo
+- limitar los municipios y distritos
+- el superadmin no tiene los botones correctos
+- Ver la parte de nuevo rol de usuario (municipio o distrito)
+- Los candidatos independientes 
+
+- administrador: admin@iepc-chiapas.net - administrador007
+- partido: partido@iepc-chiapas.net - partido007
+- -------: pri@iepc-chiapas.net - partido007
+- -------: pt@iepc-chiapas.net - partido007
+- -------: prd@iepc-chiapas.net - partido007
+- auditor: auditor@iepc-chiapas.net - auditor007
+- deap: deap@iepc-chiapas.net - deap 007
+
+lenguajes, python|escala|R
+sueldo de datascience, linkedin, talent.net
+ver, codewars, Khan academy | data camp | dataquest | code cademy | freecodecamp
+paginas perras, up-work, buscar casa de tesoros de desarrollo web
